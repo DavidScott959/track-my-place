@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track My Place | Source-to-Draft Writing Assistant</title>
+  <meta name="description" content="Track My Place is a minimal macOS overlay app that helps writers keep their place while reading, drafting, and transferring text accurately." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Track My Place home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Track My Place</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#uses">Use cases</a>
+        <a href="#versatility">Versatility</a>
+        <a href="#download">Download</a>
+      </nav>
+
+      <a class="nav-btn" href="#download">Get the app</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">macOS overlay for source-to-draft focus</p>
+
+          <h1>Keep your source and writing in sync.</h1>
+
+          <p class="hero-text">
+            <strong>Track My Place</strong> is a minimal Mac app that helps you keep your place while writing.
+            It tracks a selected source region, follows your current writing context, and highlights the exact
+            area you are working from so you spend less time rescanning and more time actually writing.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/YOUR-USERNAME/track-my-place/releases/latest/download/Track%20My%20Place-1.0.0-arm64.dmg">
+              Download app
+            </a>
+            <a class="btn btn-secondary" href="#how">How it works</a>
+          </div>
+
+          <div class="hero-tags" aria-label="Key features">
+            <span>OCR-powered</span>
+            <span>Writing assistance</span>
+            <span>Draft-to-final transfer</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="screenshot-frame">
+            <img src="assets/track-my-place-official-display.png" alt="Track My Place app running over a source and a draft side by side" />
+            <div class="image-overlay" aria-hidden="true">
+              <span class="typing-caret"></span>
+            </div>
+          </div>
+          <p class="visual-note">A live source-to-draft workflow: the app stays minimal while the source text remains visually anchored.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Minimal on purpose</p>
+          <h2>Simple interface. Serious work underneath.</h2>
+          <p class="section-lead">
+            The app looks clean because it should not become another distraction. The complexity is hidden in
+            the background: screen capture, OCR, fuzzy matching, visual anchoring, and real-time overlay rendering.
+          </p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card">
+            <div class="icon">◰</div>
+            <h3>Designed around focus</h3>
+            <p>Track My Place removes one annoying part of reading-heavy writing: relocating the exact line, sentence, or phrase you were using.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">⌁</div>
+            <h3>Built for imperfect typing</h3>
+            <p>The matching system is meant to tolerate small mistakes, OCR weirdness, repeated phrases, and natural draft changes instead of depending on perfect text.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">✦</div>
+            <h3>Visual instead of noisy</h3>
+            <p>The red and yellow highlights give you a fast visual answer: red is where you are, yellow is what comes next, and the rest of the interface gets out of the way.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Background system</p>
+          <h2>What the app is doing while it looks quiet.</h2>
+          <p class="section-lead">
+            Track My Place is not just a highlighter. It turns pixels into text, compares that text against your recent writing, and places highlights back over the original source.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step"><span>01</span><h3>Capture the source region</h3><p>You select the visible area of the page or document that the app should track.</p></div>
+          <div class="process-step"><span>02</span><h3>Recognize visible words</h3><p>OCR reads the selected screen area and converts the image of text into usable text.</p></div>
+          <div class="process-step"><span>03</span><h3>Compare recent typing</h3><p>The app compares your recent typed phrase against the recognized source text.</p></div>
+          <div class="process-step"><span>04</span><h3>Match with tolerance</h3><p>Fuzzy matching helps the app survive typos, OCR mistakes, punctuation differences, and repeated text.</p></div>
+          <div class="process-step"><span>05</span><h3>Draw the visual anchor</h3><p>The app places a red current-word anchor and a yellow forward guide directly over the source.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="uses" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Use cases</p>
+          <h2>For writing, drafting, and accurate text movement.</h2>
+          <p class="section-lead">
+            Track My Place is strongest when your eyes need to move between a source and a separate writing destination without losing exact position.
+          </p>
+        </div>
+
+        <div class="cards-2">
+          <article class="card use-card"><h3>Writing assistance</h3><p>Use it while drafting papers, notes, reflections, summaries, or long responses where you need to keep checking the source while building your own wording.</p></article>
+          <article class="card use-card"><h3>Draft-to-final transfer</h3><p>Use it when moving your own rough draft into a final document and you need word-for-word accuracy without skipping a sentence or losing your place.</p></article>
+          <article class="card use-card"><h3>Dense reading support</h3><p>Long articles, textbook pages, PDFs, and research documents become easier to work through because your current position stays visually anchored.</p></article>
+          <article class="card use-card"><h3>Multi-window work</h3><p>The app is built for the real workflow: source on one side, writing on the other, and constant movement between the two without burning attention on line tracking.</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="versatility" class="section section-showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-image-card">
+          <img src="assets/track-my-place-versatility.png" alt="Track My Place tracking text from a book while writing in Google Docs" />
+        </div>
+
+        <div class="showcase-copy">
+          <p class="section-kicker">Versatile by design</p>
+          <h2>Use it with anything that has readable text.</h2>
+          <p class="section-lead">
+            Track My Place is not limited to one type of writing setup. As shown here, the app can track a passage from a book while the user writes in a separate document. The same workflow can apply to websites, articles, PDFs, class readings, notes, online textbooks, and other text-heavy sources.
+          </p>
+          <div class="showcase-list">
+            <div>
+              <strong>For paraphrasing</strong>
+              <span>Keep the original passage visible while building your own wording in a draft.</span>
+            </div>
+            <div>
+              <strong>For direct quoting</strong>
+              <span>Maintain your exact place when moving a quote into a document.</span>
+            </div>
+            <div>
+              <strong>For source checking</strong>
+              <span>Return to the same sentence without rescanning the page or losing your train of thought.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Before and after</p>
+          <h2>The problem is not writing. It is re-finding.</h2>
+        </div>
+
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>Without Track My Place</h3>
+            <ul>
+              <li>Look away from the source and lose the exact sentence.</li>
+              <li>Waste time rescanning paragraphs you already read.</li>
+              <li>Skip words when transferring your own draft into a final version.</li>
+              <li>Break concentration every time your eyes move between windows.</li>
+            </ul>
+          </div>
+
+          <div class="compare-card good">
+            <h3>With Track My Place</h3>
+            <ul>
+              <li>The current phrase stays marked in red.</li>
+              <li>The upcoming words are previewed in yellow.</li>
+              <li>Your visual location remains stable while your writing changes.</li>
+              <li>Your attention stays on understanding and accuracy, not searching.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section download-section">
+      <div class="container">
+        <div class="download-panel">
+          <div>
+            <p class="section-kicker">Download</p>
+            <h2>Download the current Mac build.</h2>
+            <p class="section-lead">This build is for Apple Silicon Macs. The website is designed to stay lightweight while the app download is hosted through GitHub Releases.</p>
+            <p class="small-note">When the release is published, replace the placeholder link with the final GitHub Release download URL.</p>
+          </div>
+
+          <div class="download-box">
+            <a class="btn btn-primary btn-large" href="https://github.com/YOUR-USERNAME/track-my-place/releases/latest/download/Track%20My%20Place-1.0.0-arm64.dmg">Download Track My Place</a>
+
+            <ol class="install-list">
+              <li><strong>Download</strong> the latest Mac build.</li>
+              <li><strong>Open</strong> the app and allow the required macOS permissions.</li>
+              <li><strong>Start</strong> tracking from the app controls.</li>
+              <li><strong>Write</strong> while your source position stays visually anchored.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Track My Place</span>
+      </div>
+      <p>Built for focused reading, accurate writing, and fewer lost lines.</p>
+    </div>
+  </footer>
+</body>
+</html>
