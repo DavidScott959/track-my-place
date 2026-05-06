@@ -731,3 +731,18 @@ code {
     text-align: left;
   }
 }
+
+#versatility .showcase-image-card {
+  max-width: 820px;
+  margin: 0 auto 48px;
+  padding: 14px;
+  border-radius: 24px;
+}
+
+#versatility .showcase-image-card img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  padding: 8px;
+  border-radius: 18px;
+}
