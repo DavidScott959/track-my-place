@@ -629,3 +629,40 @@ code {
     border-radius: 16px;
   }
 }
+.video-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.video-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
