@@ -208,7 +208,6 @@
             <p class="section-kicker">Download</p>
             <h2>Download the current Mac build.</h2>
             <p class="section-lead">This build is for Apple Silicon Macs. The website is designed to stay lightweight while the app download is hosted through GitHub Releases.</p>
-            <p class="small-note">Developed by David A. Scott for focused reading, writing, and source-to-draft accuracy.</p>
             <p class="small-note">
   Early tester build: because this app is not yet Apple-notarized, macOS may say it is damaged. To open it, unzip the file, move Track My Place.app to Applications, then run <code>xattr -dr com.apple.quarantine "/Applications/Track My Place.app"</code> in Terminal.
 </p>
@@ -263,13 +262,36 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+  <div class="container footer-inner">
+    <div class="footer-left">
       <div class="brand footer-brand">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>Track My Place</span>
       </div>
-      <p>Built for focused reading, accurate writing, and fewer lost lines.</p>
+
+      <p class="footer-tagline">
+        Built for focused reading, accurate writing, and fewer lost lines.
+      </p>
+
+      <p class="footer-credit">
+        Developed by David A. Scott.
+      </p>
     </div>
-  </footer>
-</body>
-</html>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        Support:
+        <a href="mailto:trackmyplace.support@gmail.com">
+          trackmyplace.support@gmail.com
+        </a>
+      </p>
+      <p>
+        YouTube:
+        <a href="https://www.youtube.com/@trackmyplace" target="_blank" rel="noopener">
+          @trackmyplace
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
