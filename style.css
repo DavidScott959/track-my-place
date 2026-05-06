@@ -666,3 +666,60 @@ code {
   height: 100%;
   border: 0;
 }
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left {
+  max-width: 520px;
+}
+
+.footer-tagline {
+  margin-top: 12px;
+}
+
+.footer-credit {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  color: #6b7280;
+}
+
+.footer-contact a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-contact {
+    text-align: left;
+  }
+}
