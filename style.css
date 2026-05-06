@@ -175,6 +175,14 @@ a { color: inherit; text-decoration: none; }
 
 .btn-large { width: 100%; min-height: 54px; }
 
+.hero-tagline {
+  margin: 12px 0 18px;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 700;
+  color: #4f46e5;
+  letter-spacing: -0.02em;
+}
+
 .hero-tags {
   display: flex;
   flex-wrap: wrap;
