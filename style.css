@@ -746,3 +746,16 @@ code {
   padding: 8px;
   border-radius: 18px;
 }
+
+.terminal-command {
+  margin-top: 16px;
+  background: #f3f4f6;
+  border: 1px solid #d9dde5;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95rem;
+  color: #111827;
+  line-height: 1.5;
+  word-break: break-word;
+}
