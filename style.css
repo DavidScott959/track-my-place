@@ -813,3 +813,32 @@ code {
 .download-section {
   padding-bottom: 48px;
 }
+
+.site-footer {
+  width: 100%;
+  margin: 0;
+  padding: 32px 24px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.footer-brand {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-contact {
+  flex: 1;
+  text-align: right;
+}
