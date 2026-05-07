@@ -1098,3 +1098,17 @@ main > section + section {
     max-width: 100%;
   }
 }
+
+/* Force one clean grey divider between video/demo sections */
+.demo-section,
+.video-section,
+.showcase-section {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.10) !important;
+}
+
+/* Prevent the final section from adding an extra line before the footer */
+.demo-section:last-of-type,
+.video-section:last-of-type,
+.showcase-section:last-of-type {
+  border-bottom: none !important;
+}
