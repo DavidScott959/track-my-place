@@ -1033,3 +1033,68 @@ main > section + section {
 main > section + section {
   border-top: 1px solid rgba(229, 231, 235, 0.85) !important;
 }
+
+/* Clean footer contact alignment */
+.site-footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.site-footer .footer-left {
+  flex: 1;
+}
+
+.site-footer .footer-contact {
+  flex: 0 1 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.site-footer .footer-contact h3,
+.site-footer .footer-contact p {
+  margin: 0;
+}
+
+.site-footer .footer-contact h3 {
+  margin-bottom: 18px;
+}
+
+.site-footer .footer-contact p {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.site-footer .footer-contact a {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Mobile footer cleanup */
+@media (max-width: 768px) {
+  .site-footer .footer-inner {
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .site-footer .footer-contact {
+    width: 100%;
+    flex: none;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .site-footer .footer-contact h3,
+  .site-footer .footer-contact p {
+    text-align: left;
+  }
+
+  .site-footer .footer-contact a {
+    display: block;
+    max-width: 100%;
+  }
+}
