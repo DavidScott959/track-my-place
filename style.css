@@ -748,14 +748,22 @@ code {
 }
 
 .terminal-command {
-  margin-top: 16px;
+  margin-top: 14px;
+  display: inline-block;
+  max-width: 100%;
   background: #f3f4f6;
   border: 1px solid #d9dde5;
-  border-radius: 14px;
-  padding: 14px 18px;
+  border-radius: 12px;
+  padding: 10px 14px;
   font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
   color: #111827;
-  line-height: 1.5;
-  word-break: break-word;
+  white-space: nowrap;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.terminal-command code {
+  white-space: nowrap;
 }
