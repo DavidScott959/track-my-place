@@ -1120,3 +1120,32 @@ main > section + section {
 .showcase-video-section + section {
   border-top: 1px solid rgba(15, 23, 42, 0.12) !important;
 }
+/* =========================================================
+   CLEAN SECTION DIVIDERS — ONE THIN GREY LINE ONLY
+   ========================================================= */
+
+/* Remove old/doubled separator lines from main sections and footer */
+main > section,
+.site-footer {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove any pseudo-element divider lines that may be causing doubles */
+main > section::before,
+main > section::after,
+.site-footer::before,
+.site-footer::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Re-add one clean thin grey line between each main section */
+main > section + section {
+  border-top: 1px solid rgba(15, 23, 42, 0.10) !important;
+}
+
+/* Re-add one clean thin grey line above the footer */
+.site-footer {
+  border-top: 1px solid rgba(15, 23, 42, 0.10) !important;
+}
