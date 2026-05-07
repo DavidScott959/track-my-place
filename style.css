@@ -1198,3 +1198,68 @@ main > section + section {
 .site-footer {
   border-top: 0.5px solid rgba(15, 23, 42, 0.07) !important;
 }
+/* =========================================================
+   FINAL CLEAN DIVIDERS — KILLS VIDEO DOUBLE LINE
+   ========================================================= */
+
+/* 1. Kill every old section/footer divider */
+main > section,
+main > section.section,
+main > section.video-section,
+.site-footer {
+  border-top: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* 2. Kill old fake divider pseudo-elements */
+main > section::before,
+main > section::after,
+main > section.section::before,
+main > section.section::after,
+main > section.video-section::before,
+main > section.video-section::after,
+.site-footer::before,
+.site-footer::after {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* 3. Re-add one light thin line between normal sections,
+      but NOT above the second video */
+main > section + section:not(.demo-video-section) {
+  border-top: 0.5px solid rgba(15, 23, 42, 0.055) !important;
+}
+
+/* 4. Absolutely remove any line coming from the first video */
+.setup-video-section {
+  border-bottom: none !important;
+}
+
+.setup-video-section::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 5. Add ONLY ONE controlled line before the second video */
+.demo-video-section {
+  border-top: none !important;
+  position: relative;
+}
+
+.demo-video-section::before {
+  content: "" !important;
+  display: block !important;
+  width: min(100%, 1400px);
+  height: 0.5px;
+  background: rgba(15, 23, 42, 0.055) !important;
+  margin: 0 auto 72px;
+}
+
+/* 6. One light thin line above the footer */
+.site-footer {
+  border-top: 0.5px solid rgba(15, 23, 42, 0.055) !important;
+}
