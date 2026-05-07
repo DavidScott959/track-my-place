@@ -918,3 +918,106 @@ body {
 main > section + section {
   border-top: 1px solid var(--line);
 }
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .download-section {
+    padding: 40px 0;
+    overflow-x: hidden;
+  }
+
+  .download-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 32px 18px;
+    gap: 28px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .download-panel > div,
+  .download-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .download-panel h2 {
+    font-size: clamp(2.3rem, 11vw, 3.4rem);
+    line-height: 1.05;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .section-lead,
+  .small-note {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+  }
+
+  .terminal-command {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+
+  .terminal-command code {
+    white-space: nowrap;
+  }
+
+  .download-box {
+    padding: 24px 18px;
+  }
+
+  .download-box .btn,
+  .download-box a,
+  .download-box button {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .download-box ol {
+    padding-left: 22px;
+    margin-bottom: 0;
+  }
+
+  .download-box li {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}
