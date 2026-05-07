@@ -1304,3 +1304,12 @@ main > section + section:not(.demo-video-section) {
   border-radius: 18px;
   overflow: hidden;
 }
+
+#versatility .use-cases,
+#versatility .use-case-list,
+#versatility .versatility-use-cases,
+#versatility ul,
+#versatility .text-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
