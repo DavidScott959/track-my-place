@@ -1112,3 +1112,11 @@ main > section + section {
 .showcase-section:last-of-type {
   border-bottom: none !important;
 }
+
+/* Clean separator between embedded video blocks */
+.youtube-section + section,
+.video-section + section,
+.demo-video-section + section,
+.showcase-video-section + section {
+  border-top: 1px solid rgba(15, 23, 42, 0.12) !important;
+}
