@@ -1149,3 +1149,52 @@ main > section + section {
 .site-footer {
   border-top: 1px solid rgba(15, 23, 42, 0.10) !important;
 }
+
+/* =========================================================
+   CLEAN SECTION DIVIDERS — VERY LIGHT, THIN GREY LINES
+   ========================================================= */
+
+/* Remove all section divider borders first */
+main > section,
+.site-footer {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove fake divider lines from pseudo-elements */
+main > section::before,
+main > section::after,
+.site-footer::before,
+.site-footer::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Add one very light thin line only above normal sections */
+main > section + section {
+  border-top: 0.5px solid rgba(15, 23, 42, 0.07) !important;
+}
+
+/* Remove the normal line directly above the second video */
+.setup-video-section + .demo-video-section {
+  border-top: none !important;
+}
+
+/* Add one custom centered light line before the second video */
+.demo-video-section {
+  position: relative;
+}
+
+.demo-video-section::before {
+  content: "" !important;
+  display: block !important;
+  width: min(100%, 1400px);
+  height: 0.5px;
+  background: rgba(15, 23, 42, 0.07);
+  margin: 0 auto 72px;
+}
+
+/* One very light thin line above the footer */
+.site-footer {
+  border-top: 0.5px solid rgba(15, 23, 42, 0.07) !important;
+}
