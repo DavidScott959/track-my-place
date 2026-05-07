@@ -914,3 +914,7 @@ body {
     line-height: 1.5;
   }
 }
+
+main > section + section {
+  border-top: 1px solid var(--line);
+}
