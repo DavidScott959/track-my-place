@@ -1362,3 +1362,56 @@ main > section + section:not(.demo-video-section) {
 #versatility .showcase-list > div + div {
   border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
 }
+/* FINAL FIX: rounded white box without clipping the text */
+#versatility .showcase-list {
+  position: relative !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  padding: 16px 28px !important;
+  margin-top: 10px !important;
+  box-sizing: border-box !important;
+}
+
+/* This creates the one big rounded white box */
+#versatility .showcase-list::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  z-index: 0 !important;
+}
+
+/* Keeps all text above the white box */
+#versatility .showcase-list > div {
+  position: relative !important;
+  z-index: 1 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 7px 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Removes old forced row rounding */
+#versatility .showcase-list > div:first-child,
+#versatility .showcase-list > div:last-child {
+  border-radius: 0 !important;
+}
+
+/* Text formatting */
+#versatility .showcase-list strong {
+  display: inline !important;
+  margin-right: 4px !important;
+}
+
+#versatility .showcase-list span {
+  display: inline !important;
+}
+
+/* Optional subtle separators */
+#versatility .showcase-list > div + div {
+  border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
+}
