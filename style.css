@@ -842,3 +842,75 @@ code {
   flex: 1;
   text-align: right;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .download-section {
+    padding: 48px 16px;
+    overflow-x: hidden;
+  }
+
+  .download-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .download-panel h2 {
+    font-size: clamp(2rem, 10vw, 3.1rem);
+    line-height: 1.05;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .section-lead,
+  .small-note {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+  }
+
+  .terminal-command {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    font-size: 0.76rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+
+  .terminal-command code {
+    white-space: nowrap;
+  }
+
+  .download-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 20px;
+    box-sizing: border-box;
+  }
+
+  .download-box ol,
+  .download-box ul {
+    padding-left: 22px;
+  }
+
+  .download-box li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
