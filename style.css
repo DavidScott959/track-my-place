@@ -1313,3 +1313,8 @@ main > section + section:not(.demo-video-section) {
   border-radius: 18px;
   overflow: hidden;
 }
+#versatility .showcase-list {
+  background: white !important;
+  border-radius: 22px !important;
+  overflow: hidden !important;
+}
