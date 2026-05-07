@@ -1318,3 +1318,47 @@ main > section + section:not(.demo-video-section) {
   border-radius: 22px !important;
   overflow: hidden !important;
 }
+
+
+/* Final override: one rounded white box for the Versatility list */
+#versatility .showcase-list {
+  display: block !important;
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  padding: 14px 22px !important;
+  margin-top: 8px !important;
+  box-sizing: border-box !important;
+}
+
+/* Make each line part of the same white box, not its own box */
+#versatility .showcase-list > div {
+  display: block !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 7px 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Remove any forced rounded corners from older CSS */
+#versatility .showcase-list > div:first-child,
+#versatility .showcase-list > div:last-child {
+  border-radius: 0 !important;
+}
+
+/* Keep the bold label and regular text clean */
+#versatility .showcase-list strong {
+  display: inline !important;
+  margin-right: 4px !important;
+}
+
+#versatility .showcase-list span {
+  display: inline !important;
+}
+
+/* Optional: subtle separation between the three lines */
+#versatility .showcase-list > div + div {
+  border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
+}
