@@ -1298,3 +1298,9 @@ main > section + section:not(.demo-video-section) {
     display: none !important;
   }
 }
+.use-cases,
+.use-case-list,
+.versatility-use-cases {
+  border-radius: 18px;
+  overflow: hidden;
+}
