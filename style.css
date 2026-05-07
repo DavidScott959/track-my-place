@@ -1021,3 +1021,15 @@ body {
     line-height: 1.45;
   }
 }
+
+main > section,
+.video-section,
+section + section,
+main > section + section {
+  border-top: none !important;
+  box-shadow: none;
+}
+
+main > section + section {
+  border-top: 1px solid rgba(229, 231, 235, 0.85) !important;
+}
